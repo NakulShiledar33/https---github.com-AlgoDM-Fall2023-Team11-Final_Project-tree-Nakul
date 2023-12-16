@@ -23,6 +23,7 @@ df_full, df = getTrainingDataset(transcript_feats, Y_df, return_df_full=True)
 
 # Page options
 pages = [
+  "Home",
   "Targeted Demographics - Descriptive Approach",
   "Offer Responsiveness - Descriptive Approach",
   "Offer Responsiveness - Predictive Approach",
@@ -192,3 +193,22 @@ elif page == 'Propensity to Buy':
       # Display predicted percentage
       st.subheader("Prediction Result")
       st.write(f"According to our model, the probability that the user will buy from the offer given these data points is: {prediction_percentage:.2f}%")
+elif page == "Home":
+      
+  st.markdown("Promotional Insights App")
+
+  st.markdown("""
+        ## App Introduction:
+        This interactive platform provides insights and tools to analyze customer demographics, predict likelihood of a customer making a purchase, and find out effective promotional strategies.
+    """)
+
+  st.markdown("""
+        ## Key Functionalities of our app:
+        - **Demographic Insights:** Analyze customer behavior based on demographics, including age, income, gender, and cohort groups.
+        - **Offer responsiveness:** Explore spending patterns per demographic feature to reveal insights into offer responsiveness.
+        - **Predictive Analysis:** Utilize machine learning models to predict individual customer spending behavior.
+        - **Propensity Modelling:** Predict the likelihood of a customer making a purchase based on various features.
+
+    """)
+
+ 
