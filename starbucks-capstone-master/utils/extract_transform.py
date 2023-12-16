@@ -14,7 +14,7 @@ def loadAndCleanPortfolio():
   """ Load and clean portfolio data
   """
 
-  portfolio = pd.read_json("starbucks-capstone-master\portfolio.json", orient='records', lines=True)
+  portfolio = pd.read_json("starbucks-capstone-master/portfolio.json", orient='records', lines=True)
   
   # Available channels
   channels = ["email", "mobile", "social", "web"]
@@ -50,7 +50,7 @@ def loadAndCleanProfile(return_raw=False):
   """ Load and clean profile data
   """
 
-  profile = pd.read_json('starbucks-capstone-master\profile.json', orient='records', lines=True)
+  profile = pd.read_json('starbucks-capstone-master/profile.json', orient='records', lines=True)
 
   profile_df = profile.copy()
 
@@ -77,7 +77,7 @@ def loadAndCleanTranscript():
   """ Load and clean transcript data
   """
 
-  transcript = pd.read_json('starbucks-capstone-master\transcript.json', orient='records', lines=True)
+  transcript = pd.read_json('starbucks-capstone-master/transcript.json', orient='records', lines=True)
 
   transcript_temp = transcript.copy()
 
